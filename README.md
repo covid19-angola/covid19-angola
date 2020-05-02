@@ -1,11 +1,11 @@
 # covid19 Angola
 
-COVID-19 coronavirus tracker for Angola.
+COVID-19 tracker for Angola.
 
 
 ## Data Sources
 
-Our data is sourced from primarily from official government daily report.
+Our data is sourced primarily from official government daily report.
 
 Contributing Code
 
@@ -13,7 +13,7 @@ Contributing Code
 
 # Contributors
 
-The data aggregated here is assembled by contributors to [covid19japan.com](https://covid19japan.com/).
+
 
 # Data License and Attribution
 

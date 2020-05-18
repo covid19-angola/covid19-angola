@@ -25,13 +25,13 @@ ANGOLA_POPULATION = 32866268
 # In[37]:
 
 
-get_ipython().system('mkdir -p $OUTPUT_PATH')
+os.system('mkdir -p $OUTPUT_PATH')
 
 
 # In[38]:
 
 
-get_ipython().system("curl -Lo $INPUT_PATH/angola.csv 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTyuD092U1peHEGTL4y3QW5dw5sy3t3sxvraveh7sr0HbhG-yqGDD8mEabQmSRW0nNFSI-HqvN4Ij5i/pub?gid=1952696069&single=true&output=csv'")
+os.system("curl -Lo $INPUT_PATH/angola.csv 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTyuD092U1peHEGTL4y3QW5dw5sy3t3sxvraveh7sr0HbhG-yqGDD8mEabQmSRW0nNFSI-HqvN4Ij5i/pub?gid=1952696069&single=true&output=csv'")
 
 
 # In[39]:

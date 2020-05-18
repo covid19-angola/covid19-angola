@@ -2,8 +2,12 @@ name: Fetch Data From Google SpreadSheets
 
 
 on:
-  pull_request:
-    branches: [ master ]
+  schedule:
+    # every 10 minutes the job will run
+    - cron: "*/5 * * * *"
+  push:
+    branches:
+      - master
 
 jobs:
   build:

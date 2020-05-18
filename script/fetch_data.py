@@ -25,7 +25,7 @@ ANGOLA_POPULATION = 32866268
 # In[37]:
 
 
-os.system('mkdir -p $OUTPUT_PATH')
+os.system("mkdir -p '$OUTPUT_PATH'")
 
 
 # In[38]:

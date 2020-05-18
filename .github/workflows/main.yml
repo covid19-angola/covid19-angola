@@ -27,3 +27,12 @@ jobs:
     - name: Fetch Data
       run: |
         python script/fetch_data.py
+    - name: Add new files to github repo
+      run: |
+        git add -A dataset/
+    - name: Commit all changes
+      uses: stefanzweifel/git-auto-commit-action@v4.1.1
+      with:
+        commit_message: Update data for today 
+        branch: master
+      if: always()

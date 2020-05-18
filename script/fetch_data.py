@@ -131,8 +131,8 @@ summary_data = data[[
         'total_recovered':'Total de Recuperados'
     })
 
-summary_data.to_csv(os.path.join(OUTPUT_PATH, 'summary.csv'), index=False)
-summary_data.to_json(os.path.join(OUTPUT_PATH, 'summary.json'), orient='records')
+summary_data.to_csv(OUTPUT_PATH + '/summary.csv', index=False)
+summary_data.to_json(OUTPUT_PATH + '/summary.json', orient='records')
 
 
 # In[46]:

@@ -15,13 +15,7 @@ mkdir -p tmp
 
 now=$(date +"%Y%m%d")
 
-mv -f ./dataset/grapher.csv ./tmp
-mv -f  ./dataset/$now.json ./tmp
-mv -f  ./dataset/$now"_summary.csv" ./tmp
-mv -f  ./dataset/latest.csv ./tmp
-mv -f  ./dataset/latest.json ./tmp
-mv -f  ./dataset/summary.csv ./tmp
-mv -f  ./dataset/summary.json ./tmp 
+
 
 #python3 -m pip install --upgrade pip
 #python3 -m pip install -r script/requirements.txt

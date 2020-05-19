@@ -23,8 +23,8 @@ mv -f  ./dataset/latest.json ./tmp
 mv -f  ./dataset/summary.csv ./tmp
 mv -f  ./dataset/summary.json ./tmp 
 
-python3 -m pip install --upgrade pip
-python3 -m pip install -r script/requirements.txt
+#python3 -m pip install --upgrade pip
+#python3 -m pip install -r script/requirements.txt
 
 python3 script/fetch_data.py
 

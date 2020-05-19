@@ -1,25 +1,33 @@
-# covid19 Angola
-
-COVID-19 tracker for Angola.
-
-
-## Data Sources
-
-Our data is sourced primarily from official government daily report.
-
-## Contributing Code
-
-* If you would like to suggest improvements to the data, please file an issue on this repo.
-
-## Contributors
+## 🇦🇴 Acompanhamento dos casos da pandemia COVID-19 em Angola 😷️
 
 
 
-## Data License and Attribution
 
-This data is licensed for non-commercial public use under the [Creative Commons By Attribution Non-Commercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/).
+### Fontes de dados
+
+Os nossos dados são obtidos do relatório diário da Comissão Interministerial de Combate à Covid19 em Angola. O relatório pode ser acompanhado através dos principais órgãos de imprensa do país e também online na página do [CIAM](https://www.ciam.gov.ao)
+
+### Contexto
+
+O órgão oficial não disponibiliza informações em formatos abertos que possam ser facilmente reutilizáveis e manipuláveis para estudos/análises. Sendo assim, o nosso compromisso é cobrir este gap.
+
+### Formato de Dados
+
+* [Formato de dados](formato_dados.md)
+
+### Contribuições
+
+* Se quiser sugerir melhorias, correcções ou acrescer dados por favor faça-o via _issue_ ou _pull request_.
+
+### Contributors
 
 
-## Code License
 
-The code is licensed under the MIT License.
+### Licença para os dados
+
+©️ This data is licensed for non-commercial public use under the [Creative Commons Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0).](https://creativecommons.org/licenses/by-nc/4.0/deed.pt).
+
+
+### Code License
+
+O código fonte deste repositório é publicado sob a  MIT License.

@@ -13,13 +13,15 @@ git config user.email "${GITHUB_ACTOR}@bots.github.com"
 
 mkdir tmp
 
-cp ./dataset/grapher.csv ./tmp
-cp ./dataset/$(today).json ./tmp
-cp ./dataset/$(today)_summary.csv ./tmp
-cp ./dataset/latest.csv ./tmp
-cp ./dataset/latest.json ./tmp
-cp ./dataset/summary.csv ./tmp
-cp ./dataset/summary.json ./tmp 
+now=$(date +"%Y%m%d")
+
+mv -f ./dataset/grapher.csv ./tmp
+mv -f  ./dataset/$now.json ./tmp
+mv -f  ./dataset/$now"_summary.csv" ./tmp
+mv -f  ./dataset/latest.csv ./tmp
+mv -f  ./dataset/latest.json ./tmp
+mv -f  ./dataset/summary.csv ./tmp
+mv -f  ./dataset/summary.json ./tmp 
 
 pip3 install --quiet -r script/requirements.txt
 
@@ -31,9 +33,9 @@ git status | grep 'new file\|modified'
 if [ $? -eq 0 ]
 then
     set -e
-    git commit -am "data updated on - $(date)"
+    git commit -am "data updated on - $(now)"
     git remote set-url "$remote_name" "$repo_uri" # includes access token
-    git push --force-with-lease "$remote_name" "$gh_pages_branch"
+    git push --force-with-lease "$remote_name" #"$gh_pages_branch"
 else
     set -e
     echo "No changes since last run"

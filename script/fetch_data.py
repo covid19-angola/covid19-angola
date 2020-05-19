@@ -5,8 +5,8 @@ import os
 from datetime import datetime
 
 pd.precision = 5
-INPUT_PATH = '../input'
-OUTPUT_PATH = '../dataset'
+INPUT_PATH = 'input'
+OUTPUT_PATH = 'dataset'
 CSV_PATH = os.path.join(INPUT_PATH, 'angola.csv')
 ANGOLA_POPULATION = 32866268
 

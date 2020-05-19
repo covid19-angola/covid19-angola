@@ -128,6 +128,7 @@ def create_single_days(df, today):
 def main():
     today = datetime.today()
     data = prepare_data()
+    print(data.head())
     generate_grapher(data)
     summary_data = generate_summary(data)
     #create_single_days(summary_data, today)

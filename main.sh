@@ -11,7 +11,7 @@ cd "$GITHUB_WORKSPACE"
 git config user.name "$GITHUB_ACTOR"
 git config user.email "${GITHUB_ACTOR}@bots.github.com"
 
-mkdir tmp
+mkdir -p tmp
 
 now=$(date +"%Y%m%d")
 

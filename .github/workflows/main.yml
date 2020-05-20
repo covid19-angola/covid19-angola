@@ -11,17 +11,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    #container: python:3
+    container: python:3
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      #- name: Install Dependencies
-      #  run: |
-      #   python -m pip install --upgrade pip
-      #    python -m pip install -r script/requirements.txt
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r script/requirements.txt
 
-      - name: Fetch Data
+      - name: Run the main batch file
         run: |
           bash ./main.sh
           echo "Fetch Job Completed"

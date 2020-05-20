@@ -1,17 +1,26 @@
-# covid19 Angola
-
-COVID-19 tracker for Angola.
+## 🇦🇴 Tracking COVID-19 evolution in Angola 😷️
 
 
-## Data Sources
 
-Our data is sourced primarily from official government daily report.
 
-## Contributing Code
+### Data Source
+
+Our data is sourced primarily from official Angolan Government daily report.
+
+### Context
+
+O órgão oficial não disponibiliza informações em formatos abertos que possam ser facilmente reutilizáveis e manipuláveis para estudos/análises. Sendo assim, o nosso compromisso é cobrir este gap.
+
+### Data Format
+
+* [Data format](formato_dados.md)
+
+
+### Contributing Code
 
 * If you would like to suggest improvements to the data, please file an issue on this repo.
 
-## Contributors
+### Contributors
 
 
 

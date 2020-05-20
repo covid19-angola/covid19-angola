@@ -1,11 +1,11 @@
-## 🇦🇴 Acompanhamento dos casos da pandemia COVID-19 em Angola 😷️
+## 🇦🇴 [Acompanhamento](dataset) dos casos da pandemia COVID-19 em Angola 😷️
 
 
 
 
 ### Fontes de dados
 
-Os nossos dados são obtidos do relatório diário da Comissão Interministerial de Combate à Covid19 em Angola. O relatório pode ser acompanhado através dos principais órgãos de imprensa do país e também online na página do [CIAM](https://www.ciam.gov.ao)
+Os nossos dados são obtidos do relatório diário do Governo de Angola. O relatório pode ser acompanhado através dos principais órgãos de imprensa do país e também online na página do [CIAM](https://www.ciam.gov.ao)
 
 ### Contexto
 
@@ -25,7 +25,7 @@ O órgão oficial não disponibiliza informações em formatos abertos que possa
 
 ### Licença para os dados
 
-©️ This data is licensed for non-commercial public use under the [Creative Commons Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0).](https://creativecommons.org/licenses/by-nc/4.0/deed.pt).
+©️ Os dados estão disponíveis para uso não comercial sob a licença [Creative Commons Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0).](https://creativecommons.org/licenses/by-nc/4.0/deed.pt).
 
 
 ### Code License

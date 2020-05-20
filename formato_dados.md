@@ -9,9 +9,9 @@
 
 **Directório**: dataset
 
-**Nome do Ficheiro**: yyyymmdd_summary.csv e yyyymmdd_summary.json (ex: 20200321_summary.csv)
+**Nome do Ficheiro**: yyyymmdd.csv e summary.json (ex: 20200321.csv)
 
-**Ficheiro Geral**: summary.csv e summary.json
+**Ficheiro Geral (Agregado)**: summary.csv e summary.json
 
 **Ficheiro de Últimos Dados**: latest.csv e latest.json
 

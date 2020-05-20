@@ -70,7 +70,8 @@ def generate_grapher(data):
         'total_deaths_per_capita': 'Total Confirmed Deaths per 100.000 people'
 
     })
-    df_grapher.to_csv(os.path.join(OUTPUT_PATH, 'grapher.csv'), index=False)
+    df_grapher.to_csv(os.path.join(OUTPUT_PATH, 'grapher.csv'),
+                      index=False, float_format='%.3f')
 
 
 def generate_summary(data):
@@ -90,7 +91,8 @@ def generate_summary(data):
     })
 
     summary_data.to_csv(OUTPUT_PATH + '/summary.csv', index=False)
-    summary_data.to_json(OUTPUT_PATH + '/summary.json', orient='records')
+    summary_data.to_json(OUTPUT_PATH + '/summary.json',
+                         orient='records')
 
     return summary_data
 
@@ -106,7 +108,7 @@ def generate_daily_file(summary_data):
         UltimaActualizacao={tdate.strftime('%Y-%m-%d %H:%M:%S')})
 
     today_file.to_csv(os.path.join(
-        OUTPUT_PATH, '%s_summary.csv' % filename), index=False)
+        OUTPUT_PATH, '%s.csv' % filename), index=False)
     today_file.to_json(os.path.join(OUTPUT_PATH, '%s.json' %
                                     filename), orient='records')
 
@@ -122,8 +124,11 @@ def create_single_days(df, today):
     for x in i:
         dt = x.strftime('%Y-%m-%d')
         date_file = df.loc[df['Data'] == dt]
-        date_file.to_csv(os.path.join(OUTPUT_PATH, '%s_summary.csv' %
+        date_file.to_csv(os.path.join(OUTPUT_PATH, '%s.csv' %
                                       x.strftime('%Y%m%d')), index=False)
+
+        date_file.to_json(os.path.join(OUTPUT_PATH, '%s.json' %
+                                       x.strftime('%Y%m%d')), orient='records')
 
 
 def main():

@@ -15,8 +15,8 @@ git checkout "$main_branch"
 
 mkdir -p tmp
 
-now=$(date +"%Y%m%d")
-
+now=$(date +"%Y-%m-%d")
+now2=$(date +"%T")
 
 
 #python3 -m pip install --upgrade pip
@@ -32,7 +32,7 @@ git status | grep 'new file\|modified'
 if [ $? -eq 0 ]
 then
     set -e
-    git commit -am "$now (Automatic Update)"
+    git commit -am "$now (Automatic Update at $now2)"
     git remote set-url "$remote_name" "$repo_uri" # includes access token
     git push --force-with-lease "$remote_name"  "$main_branch" #"$gh_pages_branch"
 else

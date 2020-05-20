@@ -14,6 +14,8 @@ ANGOLA_POPULATION = 32866268
 def prepare_data():
     os.system("mkdir -p '$OUTPUT_PATH'")
     os.system("curl -Lo $INPUT_PATH/angola.csv 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTyuD092U1peHEGTL4y3QW5dw5sy3t3sxvraveh7sr0HbhG-yqGDD8mEabQmSRW0nNFSI-HqvN4Ij5i/pub?gid=1952696069&single=true&output=csv'")
+    print(INPUT_PATH)
+    print(CSV_PATH)
     data = pd.read_csv(CSV_PATH)
     data.drop(['Sintomas Leves', 'UTI', 'Acompanhamento Domiciliar',
                'Total Hospitalizado'], axis=1, inplace=True)
@@ -38,7 +40,7 @@ def prepare_data():
         (ANGOLA_POPULATION / 1e5)
     data['new_deaths_per_capita'] = data['novas_mortes'] / \
         (ANGOLA_POPULATION / 1e5)
-
+    print(data.tail())
     return data
 
 
@@ -130,6 +132,7 @@ def main():
     data = prepare_data()
     generate_grapher(data)
     summary_data = generate_summary(data)
+    generate_daily_file(summary_data)
     create_single_days(summary_data, today)
 
 

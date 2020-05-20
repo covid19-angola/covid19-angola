@@ -11,6 +11,8 @@ cd "$GITHUB_WORKSPACE"
 git config user.name "$GITHUB_ACTOR"
 git config user.email "${GITHUB_ACTOR}@bots.github.com"
 
+git checkout "$main_branch"
+
 mkdir -p tmp
 
 now=$(date +"%Y%m%d")
@@ -22,6 +24,8 @@ now=$(date +"%Y%m%d")
 
 python3 script/fetch_data.py
 
+rm -r tmp/
+pwd
 git add .
 set +e  # Grep succeeds with nonzero exit codes to show results.
 git status | grep 'new file\|modified'

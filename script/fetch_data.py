@@ -130,7 +130,7 @@ def main():
     data = prepare_data()
     generate_grapher(data)
     summary_data = generate_summary(data)
-    #create_single_days(summary_data, today)
+    create_single_days(summary_data, today)
 
 
 if __name__ == '__main__':

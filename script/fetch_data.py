@@ -39,7 +39,7 @@ def prepare_data():
         (ANGOLA_POPULATION / 1e5)
     data['new_deaths_per_capita'] = data['novas_mortes'] / \
         (ANGOLA_POPULATION / 1e5)
-    print(data.tail())
+
     return data
 
 
@@ -137,7 +137,7 @@ def main():
     generate_grapher(data)
     summary_data = generate_summary(data)
     generate_daily_file(summary_data)
-    create_single_days(summary_data, today)
+    #create_single_days(summary_data, today)
 
 
 if __name__ == '__main__':

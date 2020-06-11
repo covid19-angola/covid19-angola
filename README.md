@@ -1,7 +1,7 @@
 ## 🇦🇴 [Acompanhamento](dataset) dos casos da pandemia COVID-19 em Angola 😷️
 
 
-
+### Dashboard no Google Data Studio https://datastudio.google.com/reporting/df600b1c-5b49-42a2-aebe-35b13515d30f
 
 ### Fontes de dados
 

@@ -2,7 +2,7 @@ name: Fetch Data From Google SpreadSheets
 
 on:
   schedule:
-    # every 10 minutes the job will run
+    # every 1 hours from 19 to 0h the job will run
     - cron: "0 19/1 * * *"
   push:
     branches:

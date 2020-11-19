@@ -14,14 +14,14 @@ jobs:
       run:
         working-directory: script
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.5, 3.6, 3.7, 3.8]
+    #strategy:
+    #  matrix:
+    #    python-version: [3.5, 3.6, 3.7, 3.8]
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it....${{ matrix.python-version }}
       - uses: actions/checkout@v2
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python 
         uses: actions/setup-python@v2
         with:
           python-version: 3.7

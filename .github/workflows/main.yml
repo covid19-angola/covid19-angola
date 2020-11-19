@@ -10,6 +10,9 @@ on:
 
 jobs:
   build:
+    defaults:
+      run:
+        working-directory: scripts
     runs-on: ubuntu-latest
     container: python:3
 

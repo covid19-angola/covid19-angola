@@ -16,7 +16,7 @@ def prepare_data():
 
     data = pd.read_csv(
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vTyuD092U1peHEGTL4y3QW5dw5sy3t3sxvraveh7sr0HbhG-yqGDD8mEabQmSRW0nNFSI-HqvN4Ij5i/pub?gid=1952696069&single=true&output=csv")
-    data.drop(['Sintomas Leves', 'UTI', 'Acompanhamento Domiciliar',
+    data.drop(['Sintomas Leves', 'UTI( Estado Critico)', 'Acompanhamento Domiciliar',
                'Total Hospitalizado'], axis=1, inplace=True)
     data.rename(columns={
         'date': 'data',
